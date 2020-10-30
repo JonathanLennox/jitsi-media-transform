@@ -32,7 +32,8 @@ class OpusUtilsTest : ShouldSpec() {
                     /* This consists of the first opus packet with each toc byte value (and for code 3 packets,
                      * frame count byte) from the "new" (RFC 8251) Opus test vectors.
                      */
-                    row("3x CELT FB 20 ms stereo",
+                    row(
+                        "3x CELT FB 20 ms stereo",
                         """
                         ff83fe17bd7ffac7671a851b2c6c118bfb0b91bad839564f5e88bd307db2
                         746e6d9fc172e256c59e0527b3d9b62d10af1b2a27271e3ad11cb664f3ef
@@ -60,8 +61,10 @@ class OpusUtilsTest : ShouldSpec() {
                         247ba2e3ee367c0214234cfa74e4f04466c693a5450bac0e291f552bc814
                         7cf7e990959a14a104b54c
                         """.replace(ws, ""),
-                        2880),
-                    row("5x CELT FB 20 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "5x CELT FB 20 ms stereo",
                         """
                         ff85bfc2bfc061d6a55b1528b6d580bfb7cf2b56c41ea0b9268996eeddeb
                         2965d87e9ec148fa413a028a646b90a8c0dbe237ec3a1ecd7ac41b754f52
@@ -97,8 +100,10 @@ class OpusUtilsTest : ShouldSpec() {
                         efda5316082d668ce4aabbfa31fb13441a9c8c1ff393999ee38d4701013c
                         1fabe5db0ea0
                         """.replace(ws, ""),
-                        4800),
-                    row("1x CELT FB 20 ms stereo",
+                        4800
+                    ),
+                    row(
+                        "1x CELT FB 20 ms stereo",
                         """
                         ff41ffffcd61d6a55ab51982d918171188564b3e6c3e659ceda1c1bf05f5
                         b8092f29ebec4a0b4deaddacacc67273027ca37ba2ceb86d76df7d764a0f
@@ -132,8 +137,10 @@ class OpusUtilsTest : ShouldSpec() {
                         000000000000000000000000000000000000000000000000000000000000
                         00000000000000000000000000
                         """.replace(ws, ""),
-                        960),
-                    row("2x CELT FB 20 ms stereo",
+                        960
+                    ),
+                    row(
+                        "2x CELT FB 20 ms stereo",
                         """
                         fd61d6a54d76ec75740acf698fef9fdf9490f03628f76e52f1ff6ca66b39
                         de9ad54f22ac540a49258e45eeefe544f8cf8d23eeadd7b463fef56716a4
@@ -150,8 +157,10 @@ class OpusUtilsTest : ShouldSpec() {
                         3bba91386bfade4c544426376b7d47e0ad72d98b258640995eee6c34e70f
                         205e55fdd5c17b
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT FB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "2x CELT FB 20 ms stereo",
                         """
                         fec761d6a55b199f2421900cd3c27db420ecceaaa1c5cccb6167bc759d30
                         c7322082602fb1797daa01c69c0062e4529507baee2b2f099382c40a861d
@@ -168,8 +177,10 @@ class OpusUtilsTest : ShouldSpec() {
                         055be50e91f7566b35bf3e57817d988bd55f20cb7779de5dca3ace590000
                         24fc88013b6bfafac7ffde
                         """.replace(ws, ""),
-                        1920),
-                    row("4x CELT FB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "4x CELT FB 20 ms stereo",
                         """
                         ff84c9c9cb53c1bf112d77313cfee83d6106691646bd3f8c9f7dd8071864
                         51536ee5871b4ac494603ebe4c59ea2f2b6f396ee2a659a78527ae1bbb6b
@@ -199,8 +210,10 @@ class OpusUtilsTest : ShouldSpec() {
                         6729d981a46d9e9a1c480812c5c20ac2ae097b1be7e43fa5071081905bae
                         3cc66a7199481c4b4508d69681d7c309165da6d757e0fdebd54736264cc9
                         """.replace(ws, ""),
-                        3840),
-                    row("1x CELT FB 20 ms stereo",
+                        3840
+                    ),
+                    row(
+                        "1x CELT FB 20 ms stereo",
                         """
                         ff01d58032ac01ec84cb4d8f6b66a581b69980002de068168f2e8712a224
                         e2b4356e7fcd399bd836584309e64c9f63d91c57c0048c6645bd8dedbce3
@@ -211,8 +224,10 @@ class OpusUtilsTest : ShouldSpec() {
                         71a184bbb64bba059bf79d6f14594ea5f2f881466d203e2e558d6f2acd48
                         75001c8b595549b214
                         """.replace(ws, ""),
-                        960),
-                    row("5x CELT FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "5x CELT FB 10 ms stereo",
                         """
                         f785ad737572ef394894fbc2784293b4f944eda4cedaed2a5d22d707a7a5
                         ce6ef9bf962e1ccb30ce98f1aca8da2e774e0be8daeb894c6150c697f89f
@@ -237,8 +252,10 @@ class OpusUtilsTest : ShouldSpec() {
                         0d667230fd1697416dde417092c377e9cb9ee9dbf382a2381d5ca49ca351
                         81c3a09e4ce44778239d988285
                         """.replace(ws, ""),
-                        2400),
-                    row("1x CELT FB 10 ms stereo",
+                        2400
+                    ),
+                    row(
+                        "1x CELT FB 10 ms stereo",
                         """
                         f7410a393e2ecfa569efb21b1a9fd56def9aadbb5dae5bc25b7b5f0ee0cc
                         70ad4882b74d8f8d19fbf1927c03e955eee22f0ff2ebabfb6508bee0a339
@@ -246,8 +263,10 @@ class OpusUtilsTest : ShouldSpec() {
                         2329aec24668d848030cbf060d5966cad26f89e48820ab7c92bfaaa43200
                         0000000000000000
                         """.replace(ws, ""),
-                        480),
-                    row("3x CELT FB 10 ms stereo",
+                        480
+                    ),
+                    row(
+                        "3x CELT FB 10 ms stereo",
                         """
                         f783727104a926396056fdefffe8cd00c745b4a891a1e27660db8411f65d
                         371e20ac0780a2a94531b2475750e737acb186173da4f3702a8c44f77a34
@@ -262,8 +281,10 @@ class OpusUtilsTest : ShouldSpec() {
                         62ea8749cf7f369fed12bc188a4d7989478692c5256a0b2db6e1359bceae
                         0883bd926f0da94f3d191ecb8bad
                         """.replace(ws, ""),
-                        1440),
-                    row("2x CELT FB 10 ms stereo",
+                        1440
+                    ),
+                    row(
+                        "2x CELT FB 10 ms stereo",
                         """
                         f5c05a8d046e6c7a0cec4b2bff34a94a02b717153f844667a41fdbb1dfdb
                         86051ea5122a531668cd529429030894c867e5f828b313414cbc2d3a900e
@@ -274,16 +295,20 @@ class OpusUtilsTest : ShouldSpec() {
                         bf923828ebeecb16edac53cc5899b551279565d5b048f11b3a6a5863c186
                         68b5127d4cfc9738b661c7fe4c6d29aecb39e5f83525b9
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x CELT FB 10 ms stereo",
                         """
                         f701c1b6aa0f1e43fca1f76e39da9d16091fcf8851b6f048c981ca4c46a3
                         259b43d9c302d3205fcf206d3c381b484038a90baa27fb23fd35090bff88
                         4c7dbd8fd0e45f2f38434d7a7bc9e320bf61b85d5b799e478dfe44a4422f
                         453d1e049d6d3750781bca8dd0519764afa3944d779c3ea60c5c4239
                         """.replace(ws, ""),
-                        480),
-                    row("3x CELT FB 10 ms stereo",
+                        480
+                    ),
+                    row(
+                        "3x CELT FB 10 ms stereo",
                         """
                         f703ecef2d3a42fbd0558a9da48d9cf15f9ada7c19d43cf8174925760935
                         31152c48e82349b45d134412ce42b769c64a11b8c321cb8dbaf0ecca633c
@@ -298,8 +323,10 @@ class OpusUtilsTest : ShouldSpec() {
                         aa6b4c55a94f6e697b4adfe4b691e7144165a65020b12e347950b8945ff4
                         822598960839e67ffc120cc793e11abd19d5b1f53cf9f0
                         """.replace(ws, ""),
-                        1440),
-                    row("2x CELT FB 10 ms stereo",
+                        1440
+                    ),
+                    row(
+                        "2x CELT FB 10 ms stereo",
                         """
                         f6740387d583e89f8efb8e701295e0045a40b095b93dcbc1bdd3aaa3d6fb
                         c2b8831c906b0a929411267d1a7601a5c5dd9e85ef8f9003fcf2f81b8e6f
@@ -310,8 +337,10 @@ class OpusUtilsTest : ShouldSpec() {
                         b8d3d61d938fa45ab35d9a113b6c2167cb1ea5a87a666476162844d7bf08
                         e783deaf06400817436d1e0edf0e11ed210c3bfc4b586ef6dc49
                         """.replace(ws, ""),
-                        960),
-                    row("4x CELT FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "4x CELT FB 10 ms stereo",
                         """
                         f7847577761cc93f76ca9a6eda41d2e79635e547c403413434ec1ac8f99d
                         29bd3ae56941a466a2d5f372c01bb8fadd407fdea14921a12b3b8dcde6a3
@@ -330,8 +359,10 @@ class OpusUtilsTest : ShouldSpec() {
                         54b4dff9661b4d1fb895bbe6a57eb4eafb7ece5fcf2de8e3edc8e6932998
                         50e7c65ea35a9c4fed9da58e5404dc42720c0bcbcd50516997cb9214
                         """.replace(ws, ""),
-                        1920),
-                    row("5x CELT FB 5 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "5x CELT FB 5 ms stereo",
                         """
                         ef854b4b4e4bdbebd7f421a2ad17d630925253e76f3aecacc0a195654037
                         534772e2e639d92c20841dcc1f060ae5c8c411b310ea137083b40060998a
@@ -347,8 +378,10 @@ class OpusUtilsTest : ShouldSpec() {
                         bbc29b3f3f2dcefb63b7d5481ca9c0321d93aa01bf694994ad0cffa3473c
                         21d352182843b70d156360a9f0c67d9cc709f6f2efcb
                         """.replace(ws, ""),
-                        1200),
-                    row("3x CELT FB 5 ms stereo",
+                        1200
+                    ),
+                    row(
+                        "3x CELT FB 5 ms stereo",
                         """
                         ef834a49305149a62b3cc6baa5ad1c07dc1f3b6998529d6f480361c0adb3
                         06bd95a60939ea28db838e181dd76b398e066e1e14b615547ca19dcd2230
@@ -359,8 +392,10 @@ class OpusUtilsTest : ShouldSpec() {
                         8bc3c6c64961e4c7974527aa151c6e6c6508e3816b2eb8fd1293cb29ce3d
                         31750f27353a21b5180d01dcf5e661
                         """.replace(ws, ""),
-                        720),
-                    row("4x CELT FB 5 ms stereo",
+                        720
+                    ),
+                    row(
+                        "4x CELT FB 5 ms stereo",
                         """
                         ef844d4d4df2b0a28f44cf00d4d44c724cd5b93e05f58878de0cd5decdbf
                         f47338e1b9a88ad22d724c3f75ddc02e46135bd007837a480c8d38751870
@@ -374,8 +409,10 @@ class OpusUtilsTest : ShouldSpec() {
                         2cb47b277f103c851dd2726ce01137a38899ab319e0b9f8bf60ba51b54a4
                         2aa4db86bba62fa580ab21
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT FB 5 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x CELT FB 5 ms stereo",
                         """
                         ef417910ab2995a6a66dc875ee097b708bb73325728febbb15f0a6ad9345
                         302aee2e612c679df7f987e04012da38cfa275aa082e4d5039466e12a1da
@@ -385,8 +422,10 @@ class OpusUtilsTest : ShouldSpec() {
                         000000000000000000000000000000000000000000000000000000000000
                         000000000000000000000000000000000000
                         """.replace(ws, ""),
-                        240),
-                    row("2x CELT FB 5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "2x CELT FB 5 ms stereo",
                         """
                         ee4c2584f6fc71739bfa3b64771af4e71e8086d73db926d22820404c47e6
                         996fbacd61941c630f81bbe71a89fef1265f73d7bcc5f2da066f0543830a
@@ -395,8 +434,10 @@ class OpusUtilsTest : ShouldSpec() {
                         e838a99368f27dd755961cb14b924585b873f39ed97b0b62b2493c3fb258
                         b5bc
                         """.replace(ws, ""),
-                        480),
-                    row("3x CELT FB 5 ms stereo",
+                        480
+                    ),
+                    row(
+                        "3x CELT FB 5 ms stereo",
                         """
                         ef030093c57265a26f344a73637c734d7d39992c648f5e9aa75d91b887ed
                         33cc27b553730395a4f6174ad895cab7ae9ff92824ca2c23bb45ae2e74f8
@@ -407,15 +448,19 @@ class OpusUtilsTest : ShouldSpec() {
                         ac89eab024e659a9668c5b7c8fb767e0b484494a4bf27e5cdcd97b003217
                         d00843d9866a3d4ab7a8003e71b6
                         """.replace(ws, ""),
-                        720),
-                    row("1x CELT FB 5 ms stereo",
+                        720
+                    ),
+                    row(
+                        "1x CELT FB 5 ms stereo",
                         """
                         ef01edec073e02ec3356a81c68a06eb037209c528f2b9239d3b2c9c5aab1
                         ab68e222bf52d115993fa3099c1ae04938a0f658399416ed765501236819
                         71fc046067d6553cb974d5d19c6e9fa276575745
                         """.replace(ws, ""),
-                        240),
-                    row("2x CELT FB 5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "2x CELT FB 5 ms stereo",
                         """
                         edc267006e34891383905c844c8b410c19e6a0f4d840f18260b23ef0f00c
                         11748dc18c90d0f82603bcb688670ab89c9d16c8a27aa12e464e3c50b950
@@ -424,8 +469,10 @@ class OpusUtilsTest : ShouldSpec() {
                         9f2108099a138e4ea448f02aead23c97c8fd422bdc931900aea5aef7dea4
                         a595c29564fb24e0b9
                         """.replace(ws, ""),
-                        480),
-                    row("5x CELT FB 5 ms stereo",
+                        480
+                    ),
+                    row(
+                        "5x CELT FB 5 ms stereo",
                         """
                         ef05adb22f9d5ffe2a42c7bf0c93387d615f3d67b8da6c517ae1bac8f0b4
                         02c768ce0f0f4266c1f45bb533775676db618df4f9b2e05804d5806e665b
@@ -444,8 +491,10 @@ class OpusUtilsTest : ShouldSpec() {
                         463e1c4dc1215a6df65e7f7ae6112bb1a35bb2c4cfa6502afce0d3814907
                         2de18a36f448c39ab6953f0f9a49337b0a
                         """.replace(ws, ""),
-                        1200),
-                    row("4x CELT FB 5 ms stereo",
+                        1200
+                    ),
+                    row(
+                        "4x CELT FB 5 ms stereo",
                         """
                         ef04abcfaf9b3289536af1cd4f7a1035c2bc5cf8c83eaafa84b4569c7d30
                         9deaf3544d560287a03ba2701c82bfce706fa5c0d51f69a1392c166aae60
@@ -462,8 +511,10 @@ class OpusUtilsTest : ShouldSpec() {
                         63a7af2518a88ff0d1df277e2d737d05afda97b41b3704fc9550529abc18
                         0b5ac8f637d3c609c4a09e9a1cfea4c58d05cfc4469ebd232fdbe0ef
                         """.replace(ws, ""),
-                        960),
-                    row("5x CELT FB 2.5 ms stereo",
+                        960
+                    ),
+                    row(
+                        "5x CELT FB 2.5 ms stereo",
                         """
                         e7853a3c3a3c9de6160a872c670dd1eefd65b0369aa8c71ca3d6f9055150
                         ae65e0ed565b3a77fc9ed04e88b54a53554abb3b7f1912f6d103f769f2c3
@@ -477,16 +528,20 @@ class OpusUtilsTest : ShouldSpec() {
                         576b82672f8988e6f6b4d941967a78a2b8f11a2e0c5491fad09d5c57db22
                         d8
                         """.replace(ws, ""),
-                        600),
-                    row("2x CELT FB 2.5 ms stereo",
+                        600
+                    ),
+                    row(
+                        "2x CELT FB 2.5 ms stereo",
                         """
                         e639962248be3ad04b43db05e93074c42783e299be3b224be53d709a98c9
                         9996ffb510d558b95ace8418246e49912848b900c93b1ffba013aa39d89e
                         76d8c99ef5e55cfad4f183c0df8c56b759b3529763c4fda31e8161ea7f23
                         220d1d650cc2183fb11dc9ff5c2c25b5c5524962221ce540b54a6cdcd8
                         """.replace(ws, ""),
-                        240),
-                    row("4x CELT FB 2.5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "4x CELT FB 2.5 ms stereo",
                         """
                         e7843a3a3b9cb70f8aebc76d485d0b8166b6c1cf765fafc91368c83ff352
                         669153be42e85cf4f74b2ca717dece61868f67b5ad745000d88ee8d67192
@@ -497,15 +552,19 @@ class OpusUtilsTest : ShouldSpec() {
                         98eeaa42b3c479a7be2aac8da838418e22f6a4ea1f8c4dcc0f5450901836
                         aa6739994dc4c9e2d9dd83b4281bccba2eeeb2644b3f02d412a828d8
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT FB 2.5 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x CELT FB 2.5 ms stereo",
                         """
                         e7410b965e99cfcae41577f93d2d387d083c33435757d0230fa27f713c46
                         e377a8c3696d01444aad3781e3bb737e563676b68be04ac09d49dfc7f615
                         86d8da00000000000000000000
                         """.replace(ws, ""),
-                        120),
-                    row("3x CELT FB 2.5 ms stereo",
+                        120
+                    ),
+                    row(
+                        "3x CELT FB 2.5 ms stereo",
                         """
                         e7833c3b972b84b303c8dd025be2ad7a6299835794516b04e1b23a14da88
                         0566fde71aff585ee74e3ec84f3a0ca0bddfc014d8ee2f80045332c57762
@@ -515,15 +574,19 @@ class OpusUtilsTest : ShouldSpec() {
                         6e6a2b05a7661975c5c986fe4d63220faf5c868e04004bf0d3a6d82a44ed
                         73cf36
                         """.replace(ws, ""),
-                        360),
-                    row("1x CELT FB 2.5 ms stereo",
+                        360
+                    ),
+                    row(
+                        "1x CELT FB 2.5 ms stereo",
                         """
                         e701988b3e5d3e791ab5bbfe8edbdf0d3e1e3ee42e107584f45ecf165696
                         59c5c07a3cdf71cbb6fd7a92178885785cb0619b190f8ed3a51bbc67a7c6
                         07a297a2d8
                         """.replace(ws, ""),
-                        120),
-                    row("2x CELT FB 2.5 ms stereo",
+                        120
+                    ),
+                    row(
+                        "2x CELT FB 2.5 ms stereo",
                         """
                         e5987fb9e34aa1dd09551916231cb99a4822f4951722bb2eb14a5c772ee0
                         ab1ed48a827d5cfccfe26334b0017449c828aa6a0994c62dbbfb08959573
@@ -531,8 +594,10 @@ class OpusUtilsTest : ShouldSpec() {
                         2f11e9620e0b70c8f48f6478caf45539f0a9a8560e981bf8f6abdb6f5549
                         b8
                         """.replace(ws, ""),
-                        240),
-                    row("3x CELT FB 2.5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "3x CELT FB 2.5 ms stereo",
                         """
                         e7039d46d3ca848740f4be94533f0a31fccbd716d24aa89872549e926cef
                         c52bd965a6128ff61e593dd85f4ffbdff76a850557a698aa10c03823f175
@@ -542,8 +607,10 @@ class OpusUtilsTest : ShouldSpec() {
                         01586ed7241b019f828b86a4090d3ad658576e95650a7848a420d01f0034
                         d84066fbb8
                         """.replace(ws, ""),
-                        360),
-                    row("4x CELT FB 2.5 ms stereo",
+                        360
+                    ),
+                    row(
+                        "4x CELT FB 2.5 ms stereo",
                         """
                         e7047fe4dd0c1e1e5e6248a83e0a76b290a9a983cff14a74bad6d0bed2fd
                         3047d04f40ae9266de61754824638d9aaacc9981deb500540320f161dd21
@@ -557,30 +624,40 @@ class OpusUtilsTest : ShouldSpec() {
                         bcda802a4f87454e420905a1e1d45746754e6bdd6e0c89c8213e02b23ea7
                         4f77
                         """.replace(ws, ""),
-                        480),
-                    row("1x SILK NB 60 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x SILK NB 60 ms mono",
                         """
                         18007523c11e84d40a7ed0075134da9ffc0529ef9f410157b57c1f843e40
                         """.replace(ws, ""),
-                        2880),
-                    row("1x SILK NB 40 ms mono",
+                        2880
+                    ),
+                    row(
+                        "1x SILK NB 40 ms mono",
                         """
                         10c7049eed70ecc403a3c19ca5f459cea507264b6b3187a6069994824056
                         8a0c
                         """.replace(ws, ""),
-                        1920),
-                    row("1x SILK NB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "1x SILK NB 20 ms mono",
                         """
                         08a03a027d49761d42697057141f1d97b43e14d9b4894604f83dbe0f0224
                         5c5fdd039839b666dac0
                         """.replace(ws, ""),
-                        960),
-                    row("1x SILK NB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x SILK NB 10 ms mono",
                         """
                         009b4a0fa064ce3a81df42766e0468ee2734ed51d98516a3c1f0
                         """.replace(ws, ""),
-                        480),
-                    row("1x SILK NB 60 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x SILK NB 60 ms stereo",
                         """
                         1ce27f853110ec825fbabc88e8820cb1a5d6ba25069ec1d8cc14ea25e1a3
                         8ccfd4eaafb3596c1444c2e02fe8706847d56e57cf605f9732ddaf5efa68
@@ -595,8 +672,10 @@ class OpusUtilsTest : ShouldSpec() {
                         ea309821aa31b8fe9de96376c5a58cb0bae1c2f113678600412f4c6130d9
                         56648101f349d5bbf3a73b6ae43a93b92a5537
                         """.replace(ws, ""),
-                        2880),
-                    row("1x SILK NB 40 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "1x SILK NB 40 ms stereo",
                         """
                         14d9fdad11a0460cefc3e2ed2ab68a1872c591d79e5b2f12072084761fe7
                         e8c1ec0ebd52a31b433dc32f4f7cf9faf3c613ae6d122a08812c079a477b
@@ -607,44 +686,58 @@ class OpusUtilsTest : ShouldSpec() {
                         564b8871ddb7109d183cf726ecaa4b04148d0cd6dd09c50e8662aafe9d55
                         f1178f49a7aebb167222747c4f8f29edaf034d88
                         """.replace(ws, ""),
-                        1920),
-                    row("1x SILK NB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "1x SILK NB 20 ms stereo",
                         """
                         0ca7ad1a5fe61bf9abb0b12502f7aa886197c73ded1a8cd203b2f4790ab4
                         6a78b58a6f210149cae52c46e8a33a35c1e961081e59ee7963c19896e700
                         7ad0c14c809622f7d42dbd3eeb5cd1
                         """.replace(ws, ""),
-                        960),
-                    row("1x SILK NB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x SILK NB 10 ms stereo",
                         """
                         04a87132c62a4c828ef87c88bda740192330f6b86300d3604c77a790
                         """.replace(ws, ""),
-                        480),
-                    row("1x SILK MB 60 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x SILK MB 60 ms mono",
                         """
                         38030e50c87794309b09c692f17af64c6b87ed506e5427e26902b32ede3a
                         74
                         """.replace(ws, ""),
-                        2880),
-                    row("1x SILK MB 40 ms mono",
+                        2880
+                    ),
+                    row(
+                        "1x SILK MB 40 ms mono",
                         """
                         308d7ffd22d2921a6bb6d648fbe3fb9215e9109caa643b9e541388045283
                         3c325c256d7907a747ae0cd8a9fc60
                         """.replace(ws, ""),
-                        1920),
-                    row("1x SILK MB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "1x SILK MB 20 ms mono",
                         """
                         289c4da5ab51b323d66ba7abed1bd2a210eb283a0dee2c5bb5c5cd61b3c4
                         41176ace962046298f4512141a75a0438c
                         """.replace(ws, ""),
-                        960),
-                    row("1x SILK MB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x SILK MB 10 ms mono",
                         """
                         2088dcb975b6a1cef9ac096b4f10485bf0c6517d9d67e858f7face3bb61a
                         b3e315eaf3a9cf74
                         """.replace(ws, ""),
-                        480),
-                    row("1x SILK MB 60 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x SILK MB 60 ms stereo",
                         """
                         3ce2874a29ea21be2352b431f8cbc77ac1f048213fb4a4b84c8b83ee8146
                         125ef991196021ce98b25c5195e4b3d67bf293d9e01307127c00eeb776ee
@@ -658,52 +751,68 @@ class OpusUtilsTest : ShouldSpec() {
                         7cf193ec6b25f0fe4c9f169b692360dc663d3dce2ba681ffa6e8b331e266
                         da5bd333e844fb10467b7e0cb97c
                         """.replace(ws, ""),
-                        2880),
-                    row("1x SILK MB 40 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "1x SILK MB 40 ms stereo",
                         """
                         34021690ec8222589c8b0c6ca1ccdf3fb1ae7b74d8403f247f8e76e37fdf
                         1eea02429fb336e567a93b74a5db1f5122dbdcace52965aef24c77b37b89
                         3443cacdbb35c365256352701a35cea4f48b60f2a3ea3d
                         """.replace(ws, ""),
-                        1920),
-                    row("1x SILK MB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "1x SILK MB 20 ms stereo",
                         """
                         2ca8036e88ac65ae39d431020fa137efbb5bca821fa8b681a4ee62f28a6d
                         362fbc4cc565bc2fe69333257fc219138a7f94ad57c21a8453648a620dbe
                         28f2560e99315cf57ef109d69957b82b89228e9889a178ae692b8d34
                         """.replace(ws, ""),
-                        960),
-                    row("1x SILK MB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x SILK MB 10 ms stereo",
                         """
                         24a86191308cbf5b89b1ae96497409e20570383baf5d90983ff0752f0712
                         d02ec5f475
                         """.replace(ws, ""),
-                        480),
-                    row("1x SILK WB 60 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x SILK WB 60 ms mono",
                         """
                         5803282a165039f0d12bc8183cfe305d91e4eed56e9c876bff43bbff6382
                         21c38352f4957d22
                         """.replace(ws, ""),
-                        2880),
-                    row("1x SILK WB 40 ms mono",
+                        2880
+                    ),
+                    row(
+                        "1x SILK WB 40 ms mono",
                         """
                         50cde62c14b6bc5efc6cfd02fac18fdf31f54d061bccdc32408ef271e565
                         b7e99552be7ac81cab7d85d08f5693c6bbb2eeba8fece8de88a5532f7c43
                         30
                         """.replace(ws, ""),
-                        1920),
-                    row("1x SILK WB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "1x SILK WB 20 ms mono",
                         """
                         48a3cb0f83d1e1f73f1871d316a4c4a2720b87f9771c37c6b2a4b8747db1
                         0f1663c18d140e07a74a1c8ad33a93dc0bfeec
                         """.replace(ws, ""),
-                        960),
-                    row("1x SILK WB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x SILK WB 10 ms mono",
                         """
                         4098e477d3219e6a6e00cd2559273752a2119f94af1c57a5
                         """.replace(ws, ""),
-                        480),
-                    row("1x SILK WB 60 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x SILK WB 60 ms stereo",
                         """
                         5cee98938993003c9d2fed5720098f73754b013e2729816d066026a66869
                         19504690e6e0039c4faddd795db5ec230625ee88482b902b2bc43776d66f
@@ -714,8 +823,10 @@ class OpusUtilsTest : ShouldSpec() {
                         4bbd606a583a2e2670c09a4a2ae2122d87d3e180643b543648646055ba5a
                         1db1133be01521937536705f90ac56
                         """.replace(ws, ""),
-                        2880),
-                    row("1x SILK WB 40 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "1x SILK WB 40 ms stereo",
                         """
                         54da184f213cff83d82edd0b0ef7d615b64d755838f0adb10860f6b14762
                         c4369893f7514661b91fe46915a3f14389f90691361fe1f11efe00e24fa6
@@ -724,156 +835,210 @@ class OpusUtilsTest : ShouldSpec() {
                         ee0ffaf18d4cf6b1c9a7a760d8f2190bb236f385833e05f8bbaeae9c1fc0
                         1c60
                         """.replace(ws, ""),
-                        1920),
-                    row("1x SILK WB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "1x SILK WB 20 ms stereo",
                         """
                         4ca7fd9e698bab2e2f6e5bed63bcded399df48deaea94cbbb45290d591dd
                         bf16d1fa9eb80a0d3c1c0a0d9ef9cdbc1d8cc7e07c4dd86147d39799c07f
                         ec20b1011e3f51d944adeea0b0d0e10fad78
                         """.replace(ws, ""),
-                        960),
-                    row("1x SILK WB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x SILK WB 10 ms stereo",
                         """
                         4487fbcfdc48d7c3aa0bed544f89931913a8438680
                         """.replace(ws, ""),
-                        480),
-                    row("1x Hybrid SWB 20 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x Hybrid SWB 20 ms mono",
                         """
                         680c531a441cbb2698ea08a1f76a72686066fd551ed943422b9e642a40
                         """.replace(ws, ""),
-                        960),
-                    row("1x Hybrid SWB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x Hybrid SWB 10 ms mono",
                         """
                         60876f84e4c35d089548583e8a1704b38f22767d034184aa630411b5e610
                         00daf8341c909be4dc513cb273e195fdba716bedd2f37f
                         """.replace(ws, ""),
-                        480),
-                    row("1x Hybrid SWB 20 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x Hybrid SWB 20 ms stereo",
                         """
                         6c07fdf017dd9e107f8dc40c7730f029cbf112fe0ab9c5af83f9b86a1059
                         9505abdca98ce90cd72458b11087d7cdeab8cb235347f75170e5fd0cf5ed
                         79d75904d628d1f682fb63c96143880b605962e8b0f4a5b3894470c0f924
                         8e9f943c0efd48ec5c6fe51bb200cd6057
                         """.replace(ws, ""),
-                        960),
-                    row("1x Hybrid SWB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x Hybrid SWB 10 ms stereo",
                         """
                         64a8048161d7c7ee3becf6fe3e39e05a41357803c70b9f4c432c0b83e673
                         0707920bc8167c437de23180
                         """.replace(ws, ""),
-                        480),
-                    row("1x Hybrid FB 20 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x Hybrid FB 20 ms mono",
                         """
                         780c535b3f0706907c9cfa000dfcbc52f20cfefd48cc705a1fc0
                         """.replace(ws, ""),
-                        960),
-                    row("1x Hybrid FB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x Hybrid FB 10 ms mono",
                         """
                         708ce1bd787f0e929222c32d52ba958dd6da6db35dc174881b39d8d629e5
                         3f63f7d45d5dcbc7f9863378df7c5bd9ca328e34b74ffd525e
                         """.replace(ws, ""),
-                        480),
-                    row("1x Hybrid FB 20 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x Hybrid FB 20 ms stereo",
                         """
                         7c08119fd3ee5179479ba2a49e243512714a9c1b3ae808a8d79df44c98d3
                         0e3fa6616fea322700cdb8c4a0583dcda50d6a26e81ee044b49de29c7b5e
                         dfe0ff7cd67d790e1c35ed8c8904c80a024fa9a609fdc9949a7b037c662e
                         cf41f1bb2273aa72a44c9a72d63d
                         """.replace(ws, ""),
-                        960),
-                    row("1x Hybrid FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x Hybrid FB 10 ms stereo",
                         """
                         74a8c5f2210a54ed4f532ed9cd7f9bcef7f0276037c7d9829200be303da9
                         560d96b397f73065f63921dffde50d36e3816bd07425d9de89a17d1a899c
                         3b09
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT FB 20 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x CELT FB 20 ms mono",
                         """
                         f88a6b06f121933c6c104bc529f4a96567e99de97293aef31ed7c78c7a07
                         3e8176dd7665e5c88fdcefe673b3c6abcbd9
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT SWB 20 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x CELT SWB 20 ms mono",
                         """
                         d83f113c827e4472f5960155309b37018f61838b6c2292126cc5d87e86
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT WB 20 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x CELT WB 20 ms mono",
                         """
                         b85a104913e45712d5582588aeae863ced69b28c997eb7a9f2afd93ba884
                         f3
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT NB 20 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x CELT NB 20 ms mono",
                         """
                         9840360e610bae07071ab85cbf55e38adf9b9542cf6396154cf081e4b1db
                         69093dfaeb3f293c9c0fbc3ebfb2b30c28873e0e
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT FB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "1x CELT FB 10 ms mono",
                         """
                         f06a6b5d2996ff198b4159166a949eb5aaea3c6a51edc642ade47c
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT SWB 10 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x CELT SWB 10 ms mono",
                         """
                         d0f4bad28eed831a63aa14f262abc6c478143fa2dcb5b39533d3621fc672
                         b0cdb1bb95be
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT WB 10 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x CELT WB 10 ms mono",
                         """
                         b0c2255b15e714571297c3cfa6a0ea0dcdc6bf983788522ad6e5
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT NB 10 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x CELT NB 10 ms mono",
                         """
                         90c5e7ea7157af31e04afe39bba9341b27a852bd83e8dd82dce702c1a3f6
                         2e87d81666a35d1c125b
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT FB 5 ms mono",
+                        480
+                    ),
+                    row(
+                        "1x CELT FB 5 ms mono",
                         """
                         e8f38982a8240c9ddb4a48073433fdfd7c960a4a
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT SWB 5 ms mono",
+                        240
+                    ),
+                    row(
+                        "1x CELT SWB 5 ms mono",
                         """
                         c852e3ed326fd6dbc50ad0fa3d49b3dd909fc8
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT WB 5 ms mono",
+                        240
+                    ),
+                    row(
+                        "1x CELT WB 5 ms mono",
                         """
                         a81dc9c1ab5ac8c68814aff0cbe624c841fb30dd730c
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT NB 5 ms mono",
+                        240
+                    ),
+                    row(
+                        "1x CELT NB 5 ms mono",
                         """
                         88058abd55b5951264c6ce6549615e035225755cf07cae1209
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT FB 2.5 ms mono",
+                        240
+                    ),
+                    row(
+                        "1x CELT FB 2.5 ms mono",
                         """
                         e08a4c02719f57690f054272695f086016559bc0
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT SWB 2.5 ms mono",
+                        120
+                    ),
+                    row(
+                        "1x CELT SWB 2.5 ms mono",
                         """
                         c0db012217cb083b5087f78fdf8878f8e0e24a6504
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT WB 2.5 ms mono",
+                        120
+                    ),
+                    row(
+                        "1x CELT WB 2.5 ms mono",
                         """
                         a08158fee781fa0436e9824a5b6adcfc3d5d2b241257b41c24
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT NB 2.5 ms mono",
+                        120
+                    ),
+                    row(
+                        "1x CELT NB 2.5 ms mono",
                         """
                         801a72dce552867cc64b8b461be786d4499dbe762aa288d99396
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT FB 20 ms stereo",
+                        120
+                    ),
+                    row(
+                        "1x CELT FB 20 ms stereo",
                         """
                         fc7e85e2775c226977f77fac0d02c7ff3631684dcb10a3dea92aad4ef346
                         c64cf56b2c1e5be2736bb1b5fb26d75fbda77c0ba98c02bd79a8ac00d82f
@@ -890,8 +1055,10 @@ class OpusUtilsTest : ShouldSpec() {
                         8c1040ceb2e04f59971cd694200e6e866e7aa8745fee3015aa7430b5bff8
                         1846916919a28c42af73321e012817e4cc7904a1081865b1a627f7
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT SWB 20 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x CELT SWB 20 ms stereo",
                         """
                         dc42578178d837457f57f2e7cc98f0bcc242fd46a2d36653541d7bf6f0de
                         4f0c4a417dbcec96ac1a2d640584bd2b482ed8d81a353420170aa12a5eff
@@ -906,8 +1073,10 @@ class OpusUtilsTest : ShouldSpec() {
                         c42ab6c1202ead1a6f32fb8a8075c45afc95e3a7654d7dc8a5b7375580ff
                         e5124ebd7ae6243250c0004fe9450f5947e2a1ff87a676fccb2c
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT WB 20 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x CELT WB 20 ms stereo",
                         """
                         bcc532cc7f1803d9ed135f0a85d95f305d27fd3b2c8543e1977c7031d11c
                         636e674ae5edcb7c514fb05e9bd39aff2ff6ee115dec8ac1ead4bdf62ae9
@@ -918,8 +1087,10 @@ class OpusUtilsTest : ShouldSpec() {
                         7e787c0d30389f13a790675ba25cbdf07d1f7b9120ff8556c622575f01c2
                         d67ce1d39f35eec752e1a006c69106107ed061d9198df0f17f192e
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT NB 20 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x CELT NB 20 ms stereo",
                         """
                         9c1f1e95b222b81d461b3c8d03add73759c3e9dc32beba2fdf88d90b6ffe
                         881f31104534a1a396cf20b27f7eecfece870c808d66c99670a1be96a416
@@ -930,8 +1101,10 @@ class OpusUtilsTest : ShouldSpec() {
                         6b73c9af43b3392ea728a62f681a13bb8753ab156a3c55c5880e12dd9ccf
                         ea189c5284c4729a480bf79f267d30
                         """.replace(ws, ""),
-                        960),
-                    row("1x CELT FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "1x CELT FB 10 ms stereo",
                         """
                         f46e27a53882f3da84856b1d1226fa1c063e383587abca7d3ca62af086f9
                         12892695d96d0239b7f45c9da8558ee5153aebd5c01eefda3dfe32f6b0b8
@@ -939,16 +1112,20 @@ class OpusUtilsTest : ShouldSpec() {
                         195632dab0e53ee4997a816c8fc988bded253e7a3a08ed8dcfabf56cf572
                         4a
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT SWB 10 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x CELT SWB 10 ms stereo",
                         """
                         d4826e75cde345b3a44540cde817e2876488b5437e42366e074d68de87fc
                         0a9d7430a6a211ac2341f65446f38660ed577c62d44dc285812f6b61e094
                         22b178b22a08ede45fd9cb7b97b5039296cc41985b53d33b3228f13b640a
                         bba5151f8ccfd07b28ffd891e28e3fd66ef85f337b7843
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT WB 10 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x CELT WB 10 ms stereo",
                         """
                         b4df64b3833188e67049da7c30e887b9a519e559f1ac9f818cf28796dfe0
                         0b47a22e537b3e5ab9e9756643a52dc02460e37af999bcf42f133acba01c
@@ -957,8 +1134,10 @@ class OpusUtilsTest : ShouldSpec() {
                         4c684b3744f19a4a6d983e395b2ac1a784c05ca88d3e6ca334ee3479aa37
                         c8cd57aa5527d93f2eb6ea034a1c140522eae4d3eb4f888d07f6084d41
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT NB 10 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x CELT NB 10 ms stereo",
                         """
                         947e45574a21dde59122878b5808b116021332fda04fa0a19b60b5b11f9c
                         0f76cc3201e544a197480714a2038671206bbcdc136b6d9538637e8600b4
@@ -967,60 +1146,80 @@ class OpusUtilsTest : ShouldSpec() {
                         03a6631c633d07b9f26b9cab9aab2302a1137150a2364009232aaa80e1cd
                         33d4cd500f1bf4032877c2a5fbeef37bdd87733bf341
                         """.replace(ws, ""),
-                        480),
-                    row("1x CELT FB 5 ms stereo",
+                        480
+                    ),
+                    row(
+                        "1x CELT FB 5 ms stereo",
                         """
                         ecf3521f0ffa20228bb1fddd929b867820b9f9e8cd32472a862670dbc53e
                         0626a6812d9fd677534a9571b63757714f04b6b096f6c7c8
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT SWB 5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "1x CELT SWB 5 ms stereo",
                         """
                         cc8436418975c2e64b312de5dabd6716937ccaf09146f4dfbad3dc2580f0
                         1a6b7468078c943e90d4cae07a0ed2
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT WB 5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "1x CELT WB 5 ms stereo",
                         """
                         ac6018af9bea2ba8f4f77dc11b83a2f0c4c236fb517fbd81211ede92f04a
                         807988609b819da7076d09
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT NB 5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "1x CELT NB 5 ms stereo",
                         """
                         8c29d15b71470767c701345996421b2d80bb0e3eb60f749a922e51e55e32
                         2f2085062f
                         """.replace(ws, ""),
-                        240),
-                    row("1x CELT FB 2.5 ms stereo",
+                        240
+                    ),
+                    row(
+                        "1x CELT FB 2.5 ms stereo",
                         """
                         e48a2056d98fcf9d57e002099a3c86eb5ff39b37537d07a802d0
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT SWB 2.5 ms stereo",
+                        120
+                    ),
+                    row(
+                        "1x CELT SWB 2.5 ms stereo",
                         """
                         c460e3efff8d3a8f7fc6d85f3f80504bc1b2
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT WB 2.5 ms stereo",
+                        120
+                    ),
+                    row(
+                        "1x CELT WB 2.5 ms stereo",
                         """
                         a4da98f56223f7349446fe16359f77900014d1
                         """.replace(ws, ""),
-                        120),
-                    row("1x CELT NB 2.5 ms stereo",
+                        120
+                    ),
+                    row(
+                        "1x CELT NB 2.5 ms stereo",
                         """
                         84268ce1fd08c77dce5dc4fdcc
                         """.replace(ws, ""),
-                        120),
-                    row("2x CELT SWB 20 ms mono",
+                        120
+                    ),
+                    row(
+                        "2x CELT SWB 20 ms mono",
                         """
                         da02fffecfe05952db155ecbec657faa14fd21afb1ff5dbfa768a5027483
                         b83f139bdd612beb49d665605f9144d0d433a412b77be3af8ae713d53771
                         5aa22f0e9bfad62c4809e3e3e9413154810a2c597d46446f1a486c89dd8a
                         8230cc69cf86128f4344efddefe7ef19ce72
                         """.replace(ws, ""),
-                        1920),
-                    row("3x CELT SWB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "3x CELT SWB 20 ms mono",
                         """
                         db836a5acfeea1f7a6e71c9914d8bc3dcd9bdf70f2338f5a70e3f6e7b4ce
                         79ac2862051eec361f9db50d148c8c95ed900119c30fc31e1a57fb207cd5
@@ -1033,8 +1232,10 @@ class OpusUtilsTest : ShouldSpec() {
                         94e5c5a7b5d2a674e33db7fd98ca37dd7ce119210d202c94a679e2647bdd
                         220c93c8e51a6de3d3f9ac204376e572d800152c26e8
                         """.replace(ws, ""),
-                        2880),
-                    row("3x CELT SWB 20 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "3x CELT SWB 20 ms stereo",
                         """
                         df833d6404109fb89d764a8ed7116d153b0e3bf6654aef07546b3fc98d41
                         90ef3ff11d6628a1dc0ea0ce2966d78287f5fc06b3dd8aae67ce187afdc0
@@ -1046,8 +1247,10 @@ class OpusUtilsTest : ShouldSpec() {
                         e1a9c30ff162ea3df1cee77b1dc7a2f68dc2861cfdae04e839c278418b69
                         78dd2451ab79550c72afdd13edb8466d9c135a019cd6f98294bd
                         """.replace(ws, ""),
-                        2880),
-                    row("2x CELT SWB 20 ms mono",
+                        2880
+                    ),
+                    row(
+                        "2x CELT SWB 20 ms mono",
                         """
                         d95a9dc07ccba570508e3ddc5417c2aa52cd84e5e17176dedfe5a9dd9c2e
                         9a615649f41d1fd36fc8cb061b09247835b7702987cf4deb3ef0bd8301d5
@@ -1055,8 +1258,10 @@ class OpusUtilsTest : ShouldSpec() {
                         2fb42e4c48ec0247a094be5e46d95d944e334fdfb9b3267a443cc5289f8f
                         a763172c0bef0059b89dc5
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT SWB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "2x CELT SWB 20 ms stereo",
                         """
                         de6443f39763dcad5f2188c9220e4113a16fb1461379c8d557c5fab45a49
                         684eee83d9cddffa7e6af92b49a4c7146bea04310d02ed81593fb9db0511
@@ -1066,8 +1271,10 @@ class OpusUtilsTest : ShouldSpec() {
                         f84a9c56583506bf91fe9cc64aaf7e9e93a339445f8eb7d6cd1880930c99
                         7f36ba6d7ba28e6f3cd462e72f3435691bb1604700b246
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT SWB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "2x CELT SWB 20 ms stereo",
                         """
                         ddb80f9821b0381e79c82ae29aaeceda7ed1e7987b5a95369a0aaff5457a
                         0871c91d49c5d0c23fce08d6248f628088a192ebe4b4aaa0395a85748cc3
@@ -1075,8 +1282,10 @@ class OpusUtilsTest : ShouldSpec() {
                         a1a101ff3d21ac08673430cb40b0548eb6593e7dd1d87b5048a36e3d600a
                         e62f607c327ef2715306385fa9e87a
                         """.replace(ws, ""),
-                        1920),
-                    row("3x CELT FB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "3x CELT FB 20 ms mono",
                         """
                         fb83a48de5404dc28147889634dd6f96b7a43eaed1338ae3923ba8613661
                         ba54a43c0946df5f03773e6ebfaa5e586aecc05d6f7873e86dc81399b340
@@ -1095,50 +1304,64 @@ class OpusUtilsTest : ShouldSpec() {
                         44ea89dcb3fd7c735052f9cd009a233e3978135e93f4a87b2ef1e51744e1
                         c0e4
                         """.replace(ws, ""),
-                        2880),
-                    row("3x CELT WB 20 ms mono",
+                        2880
+                    ),
+                    row(
+                        "3x CELT WB 20 ms mono",
                         """
                         bb832f1b7f9c886dbdfda7ccc668f117a6e497f76eb5e79abe926f20860a
                         3ac2ffeb0f1f136ae77c99c4c1c3345760ea6af5565e444c0b88d46f1122
                         958f3ddc9d3ea56e10070bafeb70dfce4ddf452065fb2bd3c39f7a192547
                         da271d274a78f5904912f5b3e8e3d72c
                         """.replace(ws, ""),
-                        2880),
-                    row("3x CELT WB 20 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "3x CELT WB 20 ms stereo",
                         """
                         bf831d1b541eb3dea4b74f7f66b3921405feb69994c94095bbe657bee3d1
                         f2da7353a7f0d337510ab89851159aa8f31391f24dceeea1f55c417c459a
                         425940fe945957d33a3ad4154f2643e02504ebef53104586dc
                         """.replace(ws, ""),
-                        2880),
-                    row("2x CELT WB 20 ms stereo",
+                        2880
+                    ),
+                    row(
+                        "2x CELT WB 20 ms stereo",
                         """
                         be2074720f595c614bce78f05ce5f1c29ba3cc191e0ada7dd5bf17be2fac
                         584a622f7c01f9dcf48161ee62e99e91fe129b8c72ca3aeade9146505de6
                         f6fc4cbe
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT WB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "2x CELT WB 20 ms stereo",
                         """
                         bd5ec02e07a8116c1f11174c09144dfb5a1c81552459e853c6c34bb31ea1
                         3e08113945c953132da4dafcbde779
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT WB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "2x CELT WB 20 ms mono",
                         """
                         ba225b03a5cff18a6e42d00f7b969f1203290dd1ae28e46f90f576b49eae
                         b3cd1e8749a63aa0025414ec9c11d33fd3b60bf2660778dc64b22a50678b
                         cbfef8c0b1d0
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT WB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "2x CELT WB 20 ms mono",
                         """
                         b99543b95537cef7b80dc055ef57b04f70e1996c53467d3101746cf4329f
                         59a6f9f0159852ea25147ac58a9da8614f1cb0f84c42e3e15587982c2a11
                         92a53eb770dc086945fd5ef566
                         """.replace(ws, ""),
-                        1920),
-                    row("2x CELT FB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "2x CELT FB 20 ms mono",
                         """
                         faf48f41169fc58f1a6121dd25f8fe7cae5f22e1baf1ac82d804d865b4b9
                         37accdf8d6fad4b98eb5a2acbd4fc998d543770e894b93585349e22ba059
@@ -1164,8 +1387,10 @@ class OpusUtilsTest : ShouldSpec() {
                         2c99134b29f8982c3ae02eeda9862d425cc0284ba3df51093fd5150c1969
                         9e54f11f7a55a347672ee5e5ab26f93b2919
                         """.replace(ws, ""),
-                        1920),
-                    row("3x CELT FB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "3x CELT FB 20 ms stereo",
                         """
                         ff03cf9b4ee6325e706a5cb5c7c40f9c00ee3117c2cdd476a9c4c40979d4
                         dc66681e37fa7c82462789f55881b3b23f19c063a2080ad7d75abdcaefea
@@ -1211,8 +1436,10 @@ class OpusUtilsTest : ShouldSpec() {
                         f4db7338929ae1255b2171649146469340e2e10fb9ae553d72bed7921342
                         35af85b1f9
                         """.replace(ws, ""),
-                        2880),
-                    row("2x CELT FB 20 ms mono",
+                        2880
+                    ),
+                    row(
+                        "2x CELT FB 20 ms mono",
                         """
                         f974b0180a411a09945b0d52257525787c738d2aec6c348c8769d4b69241
                         3e79411260ede7818c96085349114bc2ffc3ffba6ff4a930c0cdce42661a
@@ -1258,8 +1485,10 @@ class OpusUtilsTest : ShouldSpec() {
                         823315880032458f6f441df28f36e204eeef3fbaa7ae4fc8957f429ecc65
                         2c521a0258a41a6995
                         """.replace(ws, ""),
-                        1920),
-                    row("3x CELT FB 20 ms mono",
+                        1920
+                    ),
+                    row(
+                        "3x CELT FB 20 ms mono",
                         """
                         fb03cf5b9a1cbf52d2e60dc4a505f5b84842aef8d52067e8aa599c59f37f
                         a4f036cc16ff0fc9a8efce070a168269913ae90657231822cf880034d5a1
@@ -1305,23 +1534,31 @@ class OpusUtilsTest : ShouldSpec() {
                         39d725e69999c9982456ab58e2fadbb17b546bf62380fabe33c66f575b68
                         0d3bc04c00
                         """.replace(ws, ""),
-                        2880),
-                    row("2x CELT FB 10 ms mono",
+                        2880
+                    ),
+                    row(
+                        "2x CELT FB 10 ms mono",
                         """
                         f1fffefffe
                         """.replace(ws, ""),
-                        960),
-                    row("2x CELT FB 5 ms mono",
+                        960
+                    ),
+                    row(
+                        "2x CELT FB 5 ms mono",
                         """
                         e9fffefffe
                         """.replace(ws, ""),
-                        480),
-                    row("2x CELT FB 2.5 ms mono",
+                        480
+                    ),
+                    row(
+                        "2x CELT FB 2.5 ms mono",
                         """
                         e1fffefffe
                         """.replace(ws, ""),
-                        240),
-                    row("5x CELT FB 20 ms mono",
+                        240
+                    ),
+                    row(
+                        "5x CELT FB 20 ms mono",
                         """
                         fb850202ff06fc06fffefffe7ffab563959299ec17076cb0d8a8a3ed61e4
                         386be6e9058426c2dc098dda82dad1cd97bbd365efa9316f90d8f1946509
@@ -1352,8 +1589,10 @@ class OpusUtilsTest : ShouldSpec() {
                         3e648c6b17e7381641f3e07ff1ac35c9c7e5805e77690549fa2c0ebfbd94
                         e564e25895a20c423fdc3390efc2d6ea7af9ba48ec6f79724bc1e2
                         """.replace(ws, ""),
-                        4800),
-                    row("4x CELT FB 20 ms mono",
+                        4800
+                    ),
+                    row(
+                        "4x CELT FB 20 ms mono",
                         """
                         fb84b1b1cbfbb487307e227b4257e4fc6e76e8d4ae0812fcffbaf22acf5b
                         0cf8edd215cbadefbf0db6a526ca1a04b1be1d43771e1c3bbfdb759ef8db
@@ -1382,8 +1621,10 @@ class OpusUtilsTest : ShouldSpec() {
                         bce81e86edf97e06445a1256d752588a23dc2cd8cd867b6413af966f7c4c
                         b0619b4b84dd9a96b9fb8ec7b735bdff
                         """.replace(ws, ""),
-                        3840),
-                    row("3x CELT FB 10 ms mono",
+                        3840
+                    ),
+                    row(
+                        "3x CELT FB 10 ms mono",
                         """
                         f3836769e5c6c11e97c2612005fca45bbe81e45a10ffcef145d560de1da8
                         b82d2e91e5c55fe1c8a2522161e4618a595ae6bcb1305284c1cec2050cb0
@@ -1398,8 +1639,10 @@ class OpusUtilsTest : ShouldSpec() {
                         78fc4166819b112998e47be81643f95bc1db32221452c0bd7ac19735d4ff
                         366b56
                         """.replace(ws, ""),
-                        1440),
-                    row("2x CELT FB 10 ms mono",
+                        1440
+                    ),
+                    row(
+                        "2x CELT FB 10 ms mono",
                         """
                         f26bd74708cf2699c89c05454b1706a8426b98f466c8689bfcf684bf5dd0
                         bce483ee652382fc0d8f7f79a7f8fd47997b2e8be63953b1af1e1832166d
@@ -1410,8 +1653,10 @@ class OpusUtilsTest : ShouldSpec() {
                         0159abb71e88e646d14a31cde8cb78455ad5a5addf762edeec66443070c9
                         390354
                         """.replace(ws, ""),
-                        960),
-                    row("4x CELT FB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "4x CELT FB 10 ms mono",
                         """
                         f384777643ea609ffee0af99a8ffaf9c2da06d73b69d2bfacc718c349dfc
                         bf031f8cb8f4f46041099c86f2155a7ad14fd7418e9e31a146918ee7c3c4
@@ -1428,8 +1673,10 @@ class OpusUtilsTest : ShouldSpec() {
                         d6adc1f340198ed30f59b29c6b1484cf74cef3aa7a32163e62c6109d81de
                         43e19092f9ec97ba8e29e7570aa83455e40459ed4355
                         """.replace(ws, ""),
-                        1920),
-                    row("5x CELT FB 10 ms mono",
+                        1920
+                    ),
+                    row(
+                        "5x CELT FB 10 ms mono",
                         """
                         f38567464575e604e44832b44788e1f07ac31e9cb8b44d7a58fce9ea038d
                         8a0a1da11301d49dc1ed42c62ae3dcb09bd3aff19d7998cbdbdf51b6f872
@@ -1447,16 +1694,20 @@ class OpusUtilsTest : ShouldSpec() {
                         8ab1e24dd70f2ebf243fe5fd1a89cdc68bf3ab3da8d91a3f2815873bde86
                         08911e79cdb98b6eaac1c51b56
                         """.replace(ws, ""),
-                        2400),
-                    row("2x CELT FB 5 ms mono",
+                        2400
+                    ),
+                    row(
+                        "2x CELT FB 5 ms mono",
                         """
                         ea24e969b83f23f022318b1471824b380c992c9db5ecc25cd77831da5849
                         4a95c6197a172b56e51c9dd894aeef47ceb807ad99cccac86b9db12ce5d8
                         989c3e1a7e08f67294fa23c376596df979373c674f72a62a1dc41bf309bb
                         f8879b52
                         """.replace(ws, ""),
-                        480),
-                    row("5x CELT FB 5 ms mono",
+                        480
+                    ),
+                    row(
+                        "5x CELT FB 5 ms mono",
                         """
                         eb8523373836e83af40da6425bf4b25e4ec3a562ac0dfd03dd5a8f2f3e1d
                         a43270cd8f6c00339e4354e4b9826359f808c556fd4c25d80c89ade741b9
@@ -1468,8 +1719,10 @@ class OpusUtilsTest : ShouldSpec() {
                         dc21ec39cc1cfb51e7b110a1859320a5befd31b1c4b3b236c81786b269c0
                         2456
                         """.replace(ws, ""),
-                        1200),
-                    row("3x CELT FB 5 ms mono",
+                        1200
+                    ),
+                    row(
+                        "3x CELT FB 5 ms mono",
                         """
                         eb833738ea99376ead3b7509cc9be5e1a49f1ab3f2597820d8e3a0da0873
                         2fb0615b615cf4bdfca783b8bc8d4e08a3d906fb0034e21ccdf12eea52ea
@@ -1478,8 +1731,10 @@ class OpusUtilsTest : ShouldSpec() {
                         aa0ea0fa77e480a9863a7234fcc4e7161dc1bb39a92be8838b9e77ff50a9
                         fa54
                         """.replace(ws, ""),
-                        720),
-                    row("4x CELT FB 5 ms mono",
+                        720
+                    ),
+                    row(
+                        "4x CELT FB 5 ms mono",
                         """
                         eb84383723deb699fa58eabc22cec8f86f6712a70d657c084d13f222e888
                         8dbd71688fc25fbc6fa91620f5e9454b9a65ed27c65c94c4d3ead48a406b
@@ -1489,21 +1744,27 @@ class OpusUtilsTest : ShouldSpec() {
                         56e82da2f0760582275d95d73574822e3dbed3ddde7813d0a0fcca8c6167
                         8bb10c97eb5fb454
                         """.replace(ws, ""),
-                        960),
-                    row("2x CELT FB 2.5 ms mono",
+                        960
+                    ),
+                    row(
+                        "2x CELT FB 2.5 ms mono",
                         """
                         e21889c721b6326b9071814ec5888628ff9fd19168da122cbe56e70fe5aa
                         0e36fb4b58f9c3abd845ba80d92d56f3fa33c71a54
                         """.replace(ws, ""),
-                        240),
-                    row("3x CELT FB 2.5 ms mono",
+                        240
+                    ),
+                    row(
+                        "3x CELT FB 2.5 ms mono",
                         """
                         e3831a1adf236087b95d9d041b3c6d61a9ce9056cc069967f6db9b90f454
                         ea59ea47a7abd9eb249bddf9206803c21ef37d32b447021e044494de5dcf
                         c45d36654aa5297d12775b6ae4320a6a0bc8df81e4
                         """.replace(ws, ""),
-                        360),
-                    row("5x CELT FB 2.5 ms mono",
+                        360
+                    ),
+                    row(
+                        "5x CELT FB 2.5 ms mono",
                         """
                         e38519191b19a4d54fe67f4cca87bf6be88c8f0919d2435fe0c523cae888
                         90dae6d38c2186372cca78dfeb0bd03e4a99689ee048fd080456ea2187c4
@@ -1511,16 +1772,20 @@ class OpusUtilsTest : ShouldSpec() {
                         b77832b441ac3ae3bd2057edd14f743ac4c8e4deffa99c4a4dbe7bc25199
                         f50281558f8e95ab014ecd436a
                         """.replace(ws, ""),
-                        600),
-                    row("4x CELT FB 2.5 ms mono",
+                        600
+                    ),
+                    row(
+                        "4x CELT FB 2.5 ms mono",
                         """
                         e38419191aea32dc2e55c78cca602b96b2744d635fdfae9be517bab4ca52
                         e6d20896d16ad7cc22be1034326a8568e383f3bbf28e0bca54ea37a173f8
                         faf62d5ae75cd12639c740a7aad3db6f8e0ef4f454e2d39b899a1903dcbb
                         61a56a1425ab6e675513fef89a51c937d88456
                         """.replace(ws, ""),
-                        480),
-                    row("3x CELT FB 5 ms mono",
+                        480
+                    ),
+                    row(
+                        "3x CELT FB 5 ms mono",
                         """
                         eb03e51cb0834ef749b4bd854fa8a1774b4d5cc66548a59128db98187946
                         a9a4aea7dbdd59192252e317d4534b6472bd949dbc27d217b9812176951d
@@ -1530,15 +1795,19 @@ class OpusUtilsTest : ShouldSpec() {
                         9ce66c0486aff261b1cf34bb19cb5e7a2936c260ecf94e4e3c2d38fa71bc
                         eb56
                         """.replace(ws, ""),
-                        720),
-                    row("3x CELT FB 2.5 ms mono",
+                        720
+                    ),
+                    row(
+                        "3x CELT FB 2.5 ms mono",
                         """
                         e303deefe56bae5256c6e8aed9eb9fe7b9955fa49e0a69fa50c64f1e3494
                         ad98807693bf88349e508640e13006d25092c79e09e8cb2f0ac8e4df0d52
                         9d6bc656f96853ad61bed92c7d2382c57eb400c828836c
                         """.replace(ws, ""),
-                        360),
-                    row("2x Hybrid FB 20 ms stereo",
+                        360
+                    ),
+                    row(
+                        "2x Hybrid FB 20 ms stereo",
                         """
                         7eff7aa785809a74e42150e84339559f20e361f448ee0979e6b3e064401b
                         77265915955e9ad2176e97be41961ee53cac3e809b4daade5f754adb2cfe
@@ -1587,8 +1856,10 @@ class OpusUtilsTest : ShouldSpec() {
                         349a584353e59bbccda518ffbac7e9283de4e6d91d3d0664c71268a69c9d
                         c9624a5bbc35af17692d5eaf34c17618091fb96f40997788
                         """.replace(ws, ""),
-                        1920),
-                    row("3x Hybrid FB 20 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "3x Hybrid FB 20 ms stereo",
                         """
                         7f83fd43fd2ea803293c394eddf00c8a64340880aa0c05fd9a660c7354fc
                         46b30ddc0e86d130fb930684b43737783c6199a079f55d72756e79f871c0
@@ -1639,8 +1910,10 @@ class OpusUtilsTest : ShouldSpec() {
                         8b509469347a9fd3171bbad147c6bfb0117016136787632ddf137700dddd
                         99
                         """.replace(ws, ""),
-                        2880),
-                    row("3x Hybrid FB 20 ms mono",
+                        2880
+                    ),
+                    row(
+                        "3x Hybrid FB 20 ms mono",
                         """
                         7b83ff25fd2502573f3fa1a60c5ad8110ee3d8ed1d99a9a9abb1b17ced88
                         2b7f84580ec50a79caff0fb434408f6e84f87c7770c8c64abd3359f2d0b5
@@ -1684,8 +1957,10 @@ class OpusUtilsTest : ShouldSpec() {
                         d81d85e8e0075687524d169428be23d2ecef7b7b2282c5b9d2f8fc037e6f
                         8d59cf19cdedb016463e856d25
                         """.replace(ws, ""),
-                        2880),
-                    row("2x Hybrid FB 20 ms mono",
+                        2880
+                    ),
+                    row(
+                        "2x Hybrid FB 20 ms mono",
                         """
                         7afd2302263fa00f025e765eb5d1a4be99d0161a0b8a60938d097099eaea
                         476657389c6e8bca68dbc98ca389ddd7d76becdbe529778b5948af3a6f55
@@ -1715,8 +1990,10 @@ class OpusUtilsTest : ShouldSpec() {
                         7010150be8183718aef7f53b9584217d59a2925f40520febf562bf369f15
                         dc377540cb
                         """.replace(ws, ""),
-                        1920),
-                    row("2x Hybrid FB 10 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "2x Hybrid FB 10 ms stereo",
                         """
                         76fc34a7fc99a237c1defda121d56ecc9dff0a6896d7b78caba5efbc3b48
                         0dd529ec2ae76ffa63e44fa209b616d6b7f8e8aeea1d9eb80a4b279e5479
@@ -1744,8 +2021,10 @@ class OpusUtilsTest : ShouldSpec() {
                         8e6d06f256d59a6c877701cb39e8dbb7be35a09eaa88a0fdad4566015b61
                         d6e3ed41911c480024
                         """.replace(ws, ""),
-                        960),
-                    row("4x Hybrid FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "4x Hybrid FB 10 ms stereo",
                         """
                         7784fe10fe0bfd12ad614e42652bbc696ad3adf12240c771ae788c27a029
                         fd2b2638c06827642c28423b52a8c53e428323384b3d144ca0a3d506c460
@@ -1791,8 +2070,10 @@ class OpusUtilsTest : ShouldSpec() {
                         fcdc6e9a53be7a57fe996ec72333df2cc4d12d2a96da148a5a8671eb50a7
                         3c38b9865753c087090daedc450ed62c257d439905687403fda4
                         """.replace(ws, ""),
-                        1920),
-                    row("3x Hybrid FB 10 ms stereo",
+                        1920
+                    ),
+                    row(
+                        "3x Hybrid FB 10 ms stereo",
                         """
                         7783fc00ea07fee08c3c69706cf8751d9c7ce1b0752da1e3c8204a0e513b
                         bc2c4e97ca0ba896d0d5e20c5afd54fa408da232ec6f08a95624d538a289
@@ -1819,8 +2100,10 @@ class OpusUtilsTest : ShouldSpec() {
                         43528b9dd55b76d4bc8df15a477c14c4625b96a01605259e2c8d6897b16d
                         44363365bf28d2dd57673c66da8fae487812995dfe4dbf
                         """.replace(ws, ""),
-                        1440),
-                    row("5x Hybrid FB 10 ms stereo",
+                        1440
+                    ),
+                    row(
+                        "5x Hybrid FB 10 ms stereo",
                         """
                         7785d8d8dedf07fcc44e60c2fb0ea6dd28ce99ccb9a5e4e9d57993ff741a
                         0d421083a3ec7954c535e1393b0db336b8dd0cac0567d341908ed0d095cd
@@ -1860,8 +2143,10 @@ class OpusUtilsTest : ShouldSpec() {
                         d86d0e5ed52bed07e7c2cdf23f0c82d0ed84303472b8f129638a8bf31abf
                         8603924a988dda95d2f4658d9253b24b267a5012e897752d89
                         """.replace(ws, ""),
-                        2400),
-                    row("3x Hybrid FB 10 ms mono",
+                        2400
+                    ),
+                    row(
+                        "3x Hybrid FB 10 ms mono",
                         """
                         7383cbcd022710fdd431d47e72e9ee1de1d7718f500dc2e7f6a3f6bcee44
                         1dd565d3cbdf2296c4ae8fe86069a243f7523f2dbd30b7674bdcd072094e
@@ -1885,8 +2170,10 @@ class OpusUtilsTest : ShouldSpec() {
                         7b362aee6f21ba260ce7e4806044940e694690416edf105819187db9eb54
                         2894138dfb66438031a39a
                         """.replace(ws, ""),
-                        1440),
-                    row("4x Hybrid FB 10 ms mono",
+                        1440
+                    ),
+                    row(
+                        "4x Hybrid FB 10 ms mono",
                         """
                         7384c8c9c70269e5d0c297e44f282218e7f6a41933c2a71081be0b33d4f9
                         bd24bb3611b445d164fc89cfeaf21d99ad4976d88bc127252005dfac6572
@@ -1916,8 +2203,10 @@ class OpusUtilsTest : ShouldSpec() {
                         6405dd51b456e16860f3c5176d4891f61ce44c5b967c9a8822556e820d54
                         c2859265a7f8749a5b3f988a3c8bb8d8003fa88f6bae
                         """.replace(ws, ""),
-                        1920),
-                    row("2x Hybrid FB 10 ms mono",
+                        1920
+                    ),
+                    row(
+                        "2x Hybrid FB 10 ms mono",
                         """
                         72d00269e6732a6db7c838efa9bda9ddfc8f96afdfd16ac560ddcee1a7ce
                         71fd389b7dcfa2653abef763babe5e983016a6f64a5910ab30fbb3addea6
@@ -1934,8 +2223,10 @@ class OpusUtilsTest : ShouldSpec() {
                         52d873d11925ee1cd3e9f9e5eca46a2ca6049d678fb62b8cff9679078e72
                         accc059209c4a10e769b79b8d639b8931d406f35ed9487
                         """.replace(ws, ""),
-                        960),
-                    row("5x Hybrid FB 10 ms mono",
+                        960
+                    ),
+                    row(
+                        "5x Hybrid FB 10 ms mono",
                         """
                         7385ccc6c8c9803c1126620d491cbc7e7be2942863a3812d3c752f4ea93a
                         9f111dae3c6cefa98e11fd6f0f5de53c35d0f56269e0a5a076c36d5d5f3b
@@ -1972,8 +2263,10 @@ class OpusUtilsTest : ShouldSpec() {
                         8f55d9b9435fc859fcca3af370dbea0164c115f1619fcdfc370538a5c4cc
                         406bf10a970db59e4cf1a26782c0e82734
                         """.replace(ws, ""),
-                        2400),
-                    row("2x Hybrid FB 10 ms mono",
+                        2400
+                    ),
+                    row(
+                        "2x Hybrid FB 10 ms mono",
                         """
                         710269e66fb816dbd707917e9376b163c92d9dddca52cd89a2c76e6d6177
                         55659d2a37ad32ce4a99b84b2f464499b5feac54f29a8ebf35c53e3dd843
@@ -1990,8 +2283,10 @@ class OpusUtilsTest : ShouldSpec() {
                         16f02b1e604f6795e484e210b090e234b30d323d98e4eea8a83227d2654f
                         e7ea5319773b66955976fb1ead49d437fab5f55291fe5300da7238
                         """.replace(ws, ""),
-                        960),
-                    row("2x Hybrid FB 10 ms stereo",
+                        960
+                    ),
+                    row(
+                        "2x Hybrid FB 10 ms stereo",
                         """
                         750801c56bbaf3fbee7f78adfb47110cc0a5820d33f7018dca46b08a5d5b
                         2fe1714da37d8b5d9f830485ef025f030c37dd1a179154f0f74060280f2f
@@ -2009,8 +2304,10 @@ class OpusUtilsTest : ShouldSpec() {
                         094e2994642d17bec7ec4e3f7a77e26f590d766fce9e0d6f8de25149fe80
                         75f47bcf51807e0e0b7830b681e66745fed264
                         """.replace(ws, ""),
-                        960),
-                    row("6x CELT FB 20 ms stereo",
+                        960
+                    ),
+                    row(
+                        "6x CELT FB 20 ms stereo",
                         """
                         ff86e5e7e8e5e8d57a2ee4906b63296c49fc6f543f8277bb1644775d802f
                         3a9dc60a8fd0e953fdff56ec6580f10bf2e1d1d1c96c252b1d71a77d84e1
@@ -2060,8 +2357,10 @@ class OpusUtilsTest : ShouldSpec() {
                         d31a1f62232c932cddd5d4acefe4b1549da92ef70765e2774425526191ef
                         23aac2a777fe31b8c7827a8c5322
                         """.replace(ws, ""),
-                        5760),
-                    row("4x CELT FB 20 ms stereo",
+                        5760
+                    ),
+                    row(
+                        "4x CELT FB 20 ms stereo",
                         """
                         ff04ab205042b5d4318a51bc07acf1756867f7774be1790fbfc9e0494b9a
                         462c6bc2821795a6d21cfe7b43433efc8afc5270f01ca27352b9cb5c75f5
@@ -2095,7 +2394,8 @@ class OpusUtilsTest : ShouldSpec() {
                         65bf4b438783c630d0fa3971626ac790e4f81d5c9ff5cdc815a192890b9a
                         d7cdad50e25799e6c36a582a2b1da6e248acf21185f8e6768125ebf7c8e2
                         """.replace(ws, ""),
-                        3840)
+                        3840
+                    )
                 ) { desc, packetHex, expected ->
                     withClue(desc) {
                         val packet = parseHexBinary(packetHex)
